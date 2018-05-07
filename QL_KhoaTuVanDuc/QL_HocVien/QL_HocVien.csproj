@@ -51,8 +51,44 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCommon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCommon.Designer.cs">
+      <DependentUpon>FormCommon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_QUANLY\frmQuanLyThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_QUANLY\frmQuanLyThongTin.Designer.cs">
+      <DependentUpon>frmQuanLyThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_SYSTEM\frmInThe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_SYSTEM\frmInThe.Designer.cs">
+      <DependentUpon>frmInThe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_SYSTEM\frmKiemTraThe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_SYSTEM\frmKiemTraThe.Designer.cs">
+      <DependentUpon>frmKiemTraThe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_SYSTEM\frmXemThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_SYSTEM\frmXemThongTin.Designer.cs">
+      <DependentUpon>frmXemThongTin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCommon.resx">
+      <DependentUpon>FormCommon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +98,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="_QUANLY\frmQuanLyThongTin.resx">
+      <DependentUpon>frmQuanLyThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_SYSTEM\frmInThe.resx">
+      <DependentUpon>frmInThe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_SYSTEM\frmKiemTraThe.resx">
+      <DependentUpon>frmKiemTraThe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_SYSTEM\frmXemThongTin.resx">
+      <DependentUpon>frmXemThongTin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -74,6 +122,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_COMMON_CONTROL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{c3c0b1bb-2cc2-41d3-a0bb-f355435e28f2}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
